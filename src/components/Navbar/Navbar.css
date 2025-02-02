@@ -26,26 +26,10 @@ nav ul li{
     transition: 0.5s;
 }
 
-.search-input {
-    padding: 5px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 50px 0 0 50px;
-    outline: none;
+.menu-icon{
+    display: none;
 }
-.search-button {
-    padding: 5px 20px;
-    font-size: 1rem;
-    background-color: #5547d8;
-    color: white;
-    border: none;
-    border-radius: 0 50px 50px 0;
-    cursor: pointer;
-}
-  
-.search-button:hover {
-    background-color: #4738b8;
-}
+
 @media (max-width: 1000px){
     .logo{
         width: 140px;
@@ -72,5 +56,13 @@ nav ul li{
     nav ul li{
         display: block;
         margin: 25px 40px;
+    }
+    .menue-icon{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+    .hide-mobile-menu{
+        right: -200px;
     }
 }

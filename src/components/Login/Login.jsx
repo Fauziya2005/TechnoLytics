@@ -1,36 +1,61 @@
-import React from 'react';
-import './Login.css';
+import React, { useState } from "react";
+//import logo from '../../assets/T-logo.png'
+import Google_Icons from '../../assets/Google_Icons.png'
+import "./Login.css";
 
-function Login() {
+const Login= ()=> {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
-    <div className="login-page">
-      <div className="login-box">
-        <div className="login-header">
-          <h1>Welcome Back!</h1>
-          <p>Log in to continue your journey</p>
-        </div>
-        <form className="login-form">
-          <input type="email" placeholder="Email Address" className="input-field" />
-          <input type="password" placeholder="Password" className="input-field" />
-          <button type="submit" className="login-button">Log In</button>
-        </form>
-        <div className="login-footer">
-          <p>
-            Don't have an account? <a href="/signup">Sign up</a>
-          </p>
+    <div className="login-container">
+      <div className="login-card">
+   
+        <h2>Welcome To TechnoLytics</h2>
+        <form>
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" required />
           
-        </div>
-        <div className="social-login">
-          <p>Or log in with</p>
-          <div className="social-icons">
-            <button className="social-btn google">Google</button>
-            <button className="social-btn facebook">Facebook</button>
-            <button className="social-btn apple">Apple</button>
-            <br></br>
+          <label>Password</label>
+          <div className="password-container">
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder="Enter your password"
+              required
+            />
+            <span
+              className="password-toggle"
+              onClick={togglePasswordVisibility}
+            >
+              👁️
+            </span>
           </div>
+
+          <a href="#" className="forgot-password">
+            Forgot password?
+          </a>
+
+          <button type="submit" className="login-btn">
+            Login
+          </button>
+        </form>
+
+        <div className="divider">
+          <hr /> <span>Or</span> <hr />
         </div>
+
+        <button className="google-btn">
+          <img
+            src={Google_Icons}
+            alt="Google Logo"
+            className="google-icon"
+          />
+          Continue with Google
+        </button>
       </div>
-      <br></br>
     </div>
   );
 }

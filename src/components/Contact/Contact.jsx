@@ -3,6 +3,7 @@ import './Contact.css'
 import msg_icon from '../../assets/msg_icon.png'
 import mail from '../../assets/mail.png'
 import call from '../../assets/call.png'
+import youtube from '../../assets/youtube.png'
 
 const Contact = () => {
 
@@ -37,8 +38,9 @@ const Contact = () => {
         <h3>Send Us a Message<img src={msg_icon} alt=''/></h3>
         <p>Feel free to reach out through contact form or find our contact information below. Your feedback, questions are important to us. </p>
         <ul>
-            <li><img src={mail}/>Contact@technolytics.com</li>
-            <li><img src={call}/>+91 6473674595</li>
+            <li><img src={mail}/>technolytics33@gmail.com</li>
+            <li><img src={call}/>7304418123</li>
+            <li><img src={youtube} width="2px" height="23px"/>TechnoLytics</li>
         </ul>
       </div>
 
@@ -59,4 +61,5 @@ const Contact = () => {
 }
 
 export default Contact
-//<img src={whithe_arrow}/>
+//<img src={whithe_arrow}/><a href='https://www.youtube.com/@TechnoLytics'>TechnoLytics </a>
+//<Title subTitle='Contact Us' title='Get in Touch'/>

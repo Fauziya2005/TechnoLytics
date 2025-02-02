@@ -1,141 +1,124 @@
-/* attractive-login.css */
+.login-container {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 220px;
+  align-items: center;
+  width: 100%;
+}
 
-/* General Reset */
+.login-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
 
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background: #ffffff; /* White background */
-    color: #333; /* Darker text color for contrast */
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .login-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .login-box {
-    background: #ffffff;
-    border: 1px solid #e0e0e0; /* Light border for separation */
-    border-radius: 15px;
-    padding: 30px;
-    text-align: center;
-    width: 350px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
-  }
-  
-  .login-header h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    color: #333; /* Dark text */
-  }
-  
-  .login-header p {
-    font-size: 16px;
-    color: #555; /* Slightly lighter text for subheader */
-    margin-bottom: 20px;
-  }
-  
-  .input-field {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd; /* Light border for input fields */
-    border-radius: 25px;
-    background: #f9f9f9; /* Light gray background for inputs */
-    color: #333;
-    font-size: 16px;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .input-field::placeholder {
-    color: #aaa;
-  }
-  
-  .input-field:focus {
-    background: #ffffff;
-    border-color: #6a11cb; /* Purple border on focus */
-  }
-  
-  .login-button {
-    width: 100%;
-    padding: 12px;
-    background: #6a11cb; /* Purple button */
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .login-button:hover {
-    background: #580da4; /* Darker purple on hover */
-  }
-  
-  .login-footer p {
-    font-size: 14px;
-    margin-top: 10px;
-    color: #555;
-  }
-  
-  .login-footer a {
-    color: #6a11cb; /* Purple links */
-    text-decoration: none;
-  }
-  
-  .login-footer a:hover {
-    text-decoration: underline;
-  }
-  
-  .social-login {
-    margin-top: 20px;
-  }
-  
-  .social-login p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .social-btn {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .social-btn.google {
-    background: #db4437;
-    color: #fff;
-  }
-  
-  .social-btn.facebook {
-    background: #3b5998;
-    color: #fff;
-  }
-  
-  .social-btn.apple {
-    background: #000;
-    color: #fff;
-  }
-  
-  .social-btn:hover {
-    opacity: 0.9;
-  }
-  
+label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin: 10px 0 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Password container */
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  flex: 1;
+}
+
+.password-toggle {
+  margin-left: -30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Forgot password link */
+.forgot-password {
+  font-size: 12px;
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Login button */
+.login-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background: #0056b3;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.divider span {
+  margin: 0 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Google button */
+.google-btn {
+  background: white;
+  color: #555;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-btn:hover {
+  background: #f8f8f8;
+}
+
+.google-icon {
+  width: 20px;
+  margin-right: 10px;
+}

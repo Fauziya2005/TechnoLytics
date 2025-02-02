@@ -1,0 +1,38 @@
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.image-container {
+  flex: 2;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.student-image {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.content-container {
+  flex: 1.5;
+  padding: 20px;
+}
+
+.content-container h1 {
+  margin-bottom: 15px;
+  font-size: 32px;
+  color: #000F38
+}
+
+.content-container p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #0c0c0c;
+  margin-bottom: 15px;
+  text-align: justify;
+}

@@ -1,0 +1,90 @@
+/* Footer Container */
+.footer {
+  background-color: hsl(244, 60%, 53%);
+  color: #ffffff;
+  padding: 40px 0px;
+  font-family: Arial, sans-serif;
+  width: 100%; /* Ensures the footer spans the full width */
+  margin: 0; /* Removes any default margin */
+  box-sizing: border-box; /* Ensures padding is included in the total width */
+}
+
+/* Footer Layout */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto; /* Center content */
+  box-sizing: border-box;
+}
+
+
+/* Footer Section */
+.footer-section {
+  flex: 1 ;
+  margin: 20px;
+  text-align: left;
+}
+
+/* Logo and Tagline */
+.footer-logo {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.footer-subtitle {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.footer-description {
+  margin: 20px 0;
+}
+
+/* Social Media Icons */
+.footer-socials {
+  margin-top: 10px;
+}
+
+.footer-icon {
+  margin: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-icon:hover {
+  color: #4da8da;
+}
+
+/* Footer Links */
+.footer-heading {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-link {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.footer-link:hover {
+  color: #4da8da;
+}
+
+/* Copyright Section */
+.footer-copyright {
+  text-align: center;
+  border-top: 1px solid #ffffff;
+  padding-top: 20px;
+  margin-top: 20px;
+}
