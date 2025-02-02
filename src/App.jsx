@@ -1,99 +1,27 @@
-import React, { useState } from 'react'
-import { createBrowserRouter } from 'react-router-dom'
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import Programs from './components/Programs/Programs'
-import Title from './components/Title/Title'
-import Login from './components/Login/Login'
-import Contact from './components/Contact/Contact'
-import About from './components/About/About'
-import Footer from './components/Footer/Footer'
-import Signup from './components/SingUp/SignUp'
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import RootLayout from './layouts/RootLayout'
+import Home from './pages/Home'
+import Login from './pages/Login/Login'
+import Contact from './pages/Contact/Contact'
+import Signup from './pages/SingUp/SignUp'
+import About from './pages/About/About'
 
-const App = () => {
-  const router= createBrowserRouter([
-    {
-      path:"/",
-      element: <Navbar/>
-    },
-    {
-      path:"/hero",
-      element: <Hero/>
-    },
-    {
-      path:"/programs",
-      element: <Programs/>
-    },
-    {
-      path:"/contact",
-      element: <Contact/>
-    },
-    {
-      path:"/login",
-      element: <Login/>
-    },
-    {
-      path:"/signup",
-      element: <Signup/>
-    },
-  ])
-  
-  return (
-    <div>
-    
-      <Navbar/>
-      <Hero/>
-      
-      <div className="container">
-        <Title subTitle='Our programs' title='What We Offer'/>
-        <Programs/>
-        
-        <About/>
-        <Title subTitle='Contact Us' title='Get in Touch'/>
-        <Contact/>
-        
-      </div>
-      <Footer/>
-    </div>
-  )
-}
-
-export default App
-//{showLogin && <Login/>}
-/*
-import React, { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import Programs from './components/Programs/Programs'
-import Title from './components/Title/Title'
-import Login from './components/Login/Login'
-import Contact from './components/Contact/Contact'
-import About from './components/About/About'
-import Footer from './components/Footer/Footer'
-import Signup from './components/SingUp/SignUp'
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter basename="/TechnoLytics">
       <Routes>
-      <Route path="/" element={Navbar} />
-      <Route path="/hero" element={Hero} />
-    
-      <Route path="/programs" element={Programs} />
-  
-      <Route path="/about" element={About} />
-        
-      <Route path="/contact" element={Contact} />
-      <Route path="/footer" element={Footer} />
-      <Route path="/login" element={Login} />
-      <Route path="/signup" element={Signup} />
-
+        <Route path="/" element={<RootLayout />}>
+          <Route index element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="about" element={<About />} />
+          <Route path="login" element={<Login />} />
+           <Route path="signup" element={<Signup />} />
+        </Route>
       </Routes>
-    </Router>
-   
+    </BrowserRouter>
   )
 }
 
 export default App
-*/

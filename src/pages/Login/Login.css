@@ -1,13 +1,20 @@
+.page-container {
+  min-height: calc(100vh - /* height of your navbar + footer */px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .login-container {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  margin-top: 220px;
-  align-items: center;
   width: 100%;
+  max-width: 400px;
+  margin: 1em auto;
 }
 
 .login-card {

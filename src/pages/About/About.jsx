@@ -4,9 +4,12 @@ import about from '../../assets/about.png'
 
 const About = () => {
   return (
-    <div className="about">
+    <>
+      <div className="about">
       <div className="image-container">
         <img
+
+
           src={about}
           alt=""
           className="student-image"
@@ -27,6 +30,8 @@ const About = () => {
         </p>
       </div>
     </div>
+    </>
+
   );
 };
 
